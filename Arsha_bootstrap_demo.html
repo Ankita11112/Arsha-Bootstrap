@@ -1,0 +1,1228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Arsha Bootstrap Demo</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+</head>
+<style>
+  .col {
+    background-color: #37517e;
+    position: fixed;
+    z-index: 9;
+  }
+
+  .scrolled{
+    background: linear-gradient(0deg, #3f85fd 0%, #37517e 94%);
+  }
+
+  .but {
+    font-size: 14px;
+    border: 2px solid #47b2e4;
+    font-weight: 600;
+    position: relative;
+    right: 4.2rem;
+  }
+
+  .b1 {
+    background-color: #37517e;
+  }
+
+  .head {
+    position: relative;
+    top: 4rem;
+    font-size: 3rem;
+  }
+
+  .head6 {
+    font-size: 1.4rem;
+    position: relative;
+  }
+
+  .btn-watch-video i {
+    line-height: 0;
+    color: #fff;
+    font-size: 36px;
+    transition: 0.3s;
+    position: relative;
+    top: 22px;
+  }
+
+  .imj {
+    color: aliceblue;
+    height: 30px;
+    filter: grayscale(100);
+    max-width: 38%;
+    cursor: pointer;
+  }
+
+  .imj:hover {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+  }
+
+  .b2 {
+    background-color: #f3f5fa;
+  }
+
+  h1,
+  h2,
+  p,
+  li,
+  button {
+    font-family: "Jost", sans-serif;
+  }
+
+  .about {
+    font-size: 33px;
+    color: #37517e;
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+  }
+
+  #why {
+    color: black;
+    font-size: 17.3px;
+    position: relative;
+
+  }
+
+  #why:hover {
+    color: #0dcaf0;
+  }
+
+  .accordion-body {
+    font-size: 18;
+  }
+
+  .cta {
+    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)) 0% 0% / cover, url(https://bootstrapmade.com/demo/templates/Arsha/assets/img/cta-bg.jpg) center center fixed;
+    padding: 120px 0px 124px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .ss {
+    color: #37517e;
+    background-color: #e5e9ed;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    font-size: 1rem;
+  }
+
+  .pl {
+    color: #198754;
+  }
+
+  #what {
+    color: #37517e;
+    font-size: 17.3px;
+    position: relative;
+
+    font-weight: 600;
+  }
+
+  #what:hover {
+    color: #0dcaf0;
+  }
+
+  .info i {
+    margin-top: 0.3rem;
+    font-size: 20px;
+    color: #47b2e4;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #e7f5fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .sub {
+    border-radius: 30px;
+    height: 3.1rem;
+    width: 11rem;
+    font-size: 15px;
+    color: white;
+    background-color: #47b2e4;
+    border: none;
+    position: relative;
+    bottom: 30px;
+  }
+
+  .linc {
+    color: #778086;
+    font-size: 14px;
+  }
+
+  .footer-links li i {
+    color: #0f9fcb;
+    font-size: 9.9px;
+  }
+
+  .cla {
+    color: #37517e;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .st {
+    color: #ffffff;
+    background-color: #47b2e4;
+    border-radius: 50%;
+    height: 34px;
+    width: 34px;
+    font-size: 1rem;
+  }
+
+  .ab:hover{
+    transform: translateY(-10px);
+    transition: 1s;
+  }
+
+</style>
+
+<body>
+
+  <!-- ..........................navbar............................................................ -->
+
+  <nav class="navbar w-100 navbar-expand-lg col">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-5 fs-2 fw-bold text-white mx-5" href="#">ARSHA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link scrollto active me-auto text-info" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-white" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-white" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-white" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-white" href="#">Team</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+              <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+              <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+              <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+              <li><a class="dropdown-item" href="#">Dropdown 5</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-white" href="#">Contact</a>
+          </li>
+
+        </ul>
+        <form class="d-flex px-4">
+          <button class="btn btn-outline-info text-white rounded-pill px-3 me-5" type="submit">Get Started</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- ..............................................second section............................................. -->
+  <div class="container-fluid pt-4 b1">
+    <div class="row pt-5">
+      <div class="col-md-6 px-5">
+        <h1 class="fw-bold text-light py-5 head">Better Solutions For Your <br> Business</h1>
+        <h6 class="text-light fw-bold head6 pt-3 ">We are team of talented designers making websites <br> with
+          Bootstrap</h6>
+
+        <form class="  px-5 mx-3 pt-5 h-75 w-100">
+          <button class="btn btn-outline-info text-white bg-info rounded-pill px-4 py-2 fs-5 but " type="submit">Get
+            Started</button> <span style="position: relative; bottom: 9px; right: 30px;" ><a href="https://youtu.be/cfg9_cp4zGk?si=SVjxkt96zYpdqvWP"
+              class="glightbox btn-watch-video text-decoration-none" ><i class="fa-solid fa-circle-play pe-3 py-2"></i><span style="color: white; position: relative; top: 12px">Watch Video</span></a></span>
+        </form>
+
+
+      </div>
+      <div class=" col-md-6 mt-3">
+        <img class="img-fluid animated mx-4 h-100 py-1"  src="image/hero-img.png" width="85%" alt="">
+      </div>
+
+    </div>
+
+
+  </div>
+  <!-- .......................................................third section.................................. -->
+  <div class="container-fluid b2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 py-4 text-center">
+          <img class="imj" src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-1.png" alt="">
+        </div>
+        <div class="col-md-2 py-4 text-center">
+          <img class="imj" src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-2.png" alt="">
+        </div>
+        <div class="col-md-2 py-4 text-center">
+          <img class="imj" src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-3.png" alt="">
+        </div>
+        <div class="col-md-2 py-4 text-center">
+          <img class="imj" src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-4.png" alt="">
+        </div>
+        <div class="col-md-2 py-4 text-center">
+          <img class="imj" src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-5.png" alt="">
+        </div>
+        <div class="col-md-2 py-4 text-center">
+          <img class="imj" src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-6.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ...........................................forth section.............................................. -->
+
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-md-12">
+        <h1 class="text-center about">ABOUT US</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6" style="font-size: 17.3px; line-height: 32px;">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et
+          dolore magna aliqua.
+        </p>
+        <ul class="me-5">
+          <li class="list-unstyled align-items-start "><i class="fa-solid fa-check-double text-info"></i> Ullamco
+            laboris nisi ut
+            aliquip ex ea commodo consequat</li>
+          <li class="list-unstyled "><i class="fa-solid fa-check-double text-info"></i> Duis aute irure dolor in
+            reprehenderit in voluptate velit</li>
+          <li class="list-unstyled "><i class="fa-solid fa-check-double text-info"></i> Ullamco laboris nisi ut
+            aliquip ex ea commodo consequat</li>
+        </ul>
+      </div>
+      <div class="col-md-6" style="font-size: 17.3px; line-height: 29px;">
+        <p class="pt-1">
+          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <button
+          style="border: 2px solid #47b2e4; color: #47b2e4; border-radius: 5px; height: 2.6rem; width: 9rem; font-size: 14.2px; letter-spacing: 1px;"><a
+            href="#" class="btn-learn-more text-decoration-none">Learn More</a></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- .........................................fifth section............................................ -->
+
+  <div class="container-fluid py-md-5" style="background-color: rgb(242, 246, 250); margin-top: 3rem;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="content">
+            <h3 style="font-size: 32px; color: #37517e; line-height: 40px;">Eum ipsam laborum deleniti <strong>velit
+                pariatur architecto aut nihil</strong></h3>
+            <p style="color: #6c757d;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Duis aute irure dolor in reprehenderit
+            </p>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item" style="border: none;">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <strong style="color:#0dcaf0; font-size: 20px; ">01</strong> <span id="why" class="px-3">Non
+                    consectetur a erat nam
+                    at lectus urna duis?</span>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body mx-4">
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus <br> laoreet non curabitur
+                  gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mt-4" style="border: none;">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <strong style="color:#0dcaf0; font-size: 20px; ">02</strong> <span id="why" class="px-3">Feugiat
+                    scelerisque varius
+                    morbi enim nunc?</span>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body mx-4">
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
+                  donec ultrices. Fringilla phasellus faucibus scelerisque eleifend <br> donec pretium. Est pellentesque
+                  elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mt-4" style="border: none;">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <strong style="color:#0dcaf0; font-size: 20px; ">03</strong> <span id="why" class="px-3">Dolor sit
+                    amet consectetur
+                    adipiscing elit?</span>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body mx-4">
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus <br> pulvinar
+                  elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu
+                  tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed
+                  odio morbi quis
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid" src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/why-us.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- .......................................sixth section........................................ -->
+  <div class="container-fluid py-5" style="margin-top: 1.5rem;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-fluid" src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/skills.png" alt="">
+        </div>
+        <div class="col-md-6">
+          <h3 style="font-size: 35px; color: #37517e; line-height: 40px; font-weight: bold;">Voluptatem dignissimos
+            provident <br> quasi corporis voluptates</h3>
+          <p class="fst-italic" style="color: #565c60;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua.
+          </p>
+
+          <h6 class="pt-3">HTML <span style="float: right!important; color:#37517e;">100%</span></h6>
+          <div class="progress" style="border-radius: 0;" role="progressbar" aria-label="Basic example"
+            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 100%; background-color:#37517e;"></div>
+          </div>
+          <h6 class="pt-3">CSS <span style="float: right!important; color:#37517e;">90%</span></h6>
+          <div class="progress" style="border-radius: 0;" role="progressbar" aria-label="Basic example"
+            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 90%; background-color:#37517e;"></div>
+          </div>
+          <h6 class="pt-3">JAVASCRIPT <span style="float: right!important; color:#37517e;">75%</span></h6>
+          <div class="progress" style="border-radius: 0;" role="progressbar" aria-label="Basic example"
+            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 75%; background-color:#37517e;"></div>
+          </div>
+          <h6 class="pt-3">PHOTOSHOP <span style="float: right!important; color:#37517e;">55%</span></h6>
+          <div class="progress" style="border-radius: 0;" role="progressbar" aria-label="Basic example"
+            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 55%; background-color:#37517e;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ......................................Seventh Section of Services..................................... -->
+
+  <div class="container-fluid py-5" style="background-color: rgb(242, 246, 250); margin-top: 4rem;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md text-center">
+          <h2 style="font-size: 35px; color: #37517e; font-weight: bolder;">Services</h2>
+          <p style="color: #565c60; margin-top: 2rem;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+            ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
+            impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+      </div>
+      <div class="row py-3">
+        <div class="col-md-3">
+          <div class="card py-5 mt-4 ab"
+            style="height: 17rem; border: none; border-radius: 0; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+            <div class="card-body h-100">
+              <div class="icon"><i class="fa-brands fa-dribbble" style="color: #0dcaf0; font-size: 2rem;"></i></div>
+              <h4 class="py-2"><a href="#" style="color:#37517e; font-weight: bold; text-decoration: none; ">Lorem
+                  Ipsum</a></h4>
+              <p style="color: #565c60">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card py-5 mt-4 ab"
+            style=" height: 17rem; border: none; border-radius: 0; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+            <div class="card-body h-100">
+              <div class="icon"><i class="fa-regular fa-file" style="color: #0dcaf0; font-size: 2rem; "></i></div>
+              <h4 class="py-2"><a href="#" style="color:#37517e; font-weight: bold; text-decoration: none;">Sed ut
+                  perspici</a></h4>
+              <p style="color: #565c60">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card py-5 mt-4 ab"
+            style=" height: 17rem; border: none; border-radius: 0; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+            <div class="card-body h-100">
+              <div class="icon"><i class="fa-solid fa-gauge" style="color: #0dcaf0; font-size: 2rem; "></i></div>
+              <h4 class="py-2"><a href="#" style="color:#37517e; font-weight: bold; text-decoration: none;">Magni
+                  Dolores</a></h4>
+              <p style="color: #565c60">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card py-5 mt-4 ab"
+            style=" height: 17rem; border: none; border-radius: 0; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+            <div class="card-body h-100">
+              <div class="icon"><i class="fa-solid fa-layer-group" style="color: #0dcaf0; font-size: 2rem; "></i></div>
+              <h4 class="py-2"><a href="#" style="color:#37517e; font-weight: bold; text-decoration: none;">Nemo
+                  Enim</a></h4>
+              <p style="color: #565c60">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ........................................Eighth Section.................................................. -->
+  <div class="container-fluid pt-5 cta">
+    <div class="container ">
+      <div class="row py-5">
+        <div class="col-md-9 pt-5">
+          <h3 style="font-weight: bold; color: #f3f5fa;">Call To Action</h3>
+          <p style="color: #f3f5fa;"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.</p>
+        </div>
+        <div class="col-md-3 pt-5 cta-btn-container" style="margin-top: 2rem;">
+          <button
+            style="border:2px solid white; height: 3.1rem; width: 12rem; border-radius: 5rem; background-color:rgb(55, 81, 126, 0);"><a
+              class="cta-btn" style="text-decoration: none; color: #f3f5fa;" href="#">Call To
+              Action</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Nineth section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+  <div class="container-fluid py-5">
+    <div class="container">
+      <div class="row pt-4 text-center">
+        <div class="col-md">
+          <h2 style="color:#37517e; font-weight: 850; font-size: 31px;">PORTFOLIO</h2>
+          <p class="pt-4" style="color: #565c60; font-size: 17px;">Magnam dolores commodi suscipit. Necessitatibus eius
+            consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et
+            nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+      </div>
+
+      <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">All</button>
+
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">App</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Card</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled"
+            type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Web</button>
+        </li>
+      </ul>
+      <div class="tab-content py-4" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+          tabindex="0">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-fluid"
+                src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-1.jpg" alt="">
+              <img class="img-fluid py-4"
+                src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-6.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid"
+                src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-2.jpg" alt="">
+              <img class="img-fluid py-4"
+                src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-5.jpg" alt="">
+              <img class="img-fluid"
+                src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-9.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid"
+                src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-3.jpg" alt="">
+              <img class="img-fluid py-4"
+                src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-4.jpg" alt="">
+              <img class="img-fluid"
+                src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-7.jpg" alt="">
+              <img class="img-fluid py-4"
+                src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-8.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-fluid"
+                src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-1.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid"
+                src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-3.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid"
+                src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-6.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-fluid"
+                src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-4.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid"
+                src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-7.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid"
+                src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-8.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+          tabindex="0">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-fluid"
+                src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-2.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid"
+                src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-5.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid"
+                src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-9.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Tenth Section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+  <div class="container-fluid py-5" style="background-color: rgb(242, 246, 250); margin-top: 2rem;">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md">
+          <h2 style="color:#37517e; font-weight: 850; font-size: 31px;">TEAM</h2>
+          <p class="pt-4" style="color: #565c60; font-size: 17px;">Magnam dolores commodi suscipit. Necessitatibus eius
+            consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et
+            nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+      </div>
+      <div class="row py-2">
+        <div class="col-md">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-3 ab"
+                style="max-width: 630px; border: none; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+                <div class="row g-0">
+                  <div class=" col-md-4">
+                    <img style="height: auto; width: 90%;"
+                      src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-1.jpg"
+                      class="img-fluid rounded-circle pt-3 px-3" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h4 style="color:#37517e; font-weight: bold; font-size: large;">Walter White</h4>
+                      <span style="color: #565c60;">Chief Executive Officer</span>
+                      <p class="pt-3" style="color: #565c60;">Explicabo voluptatem mollitia et repellat qui dolorum
+                        quasi
+                      </p>
+                      <div class="social">
+                        <a href="#"><i class="fa-brands fa-twitter ss py-2 px-2"></i></a>
+                        <a class="mx-1" href="#"><i class="fa-brands fa-facebook-f ss py-2 px-2"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram ss py-2 px-2"></i></a>
+                        <a class="mx-1" href="#"><i class="fa-brands fa-linkedin ss py-2 px-2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-3 ab"
+                style="max-width: 630px; border: none; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img style="height: auto; width: 90%;"
+                      src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-2.jpg"
+                      class="img-fluid rounded-circle pt-3 px-3" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h4 style="color:#37517e; font-weight: bold; font-size: large;">Sarah Jhonson</h4>
+                      <span style="color: #565c60;">Product Manager</span>
+                      <p class="pt-3" style="color: #565c60;">Aut maiores voluptates amet et quis praesentium qui senda
+                        para
+                      </p>
+                      <div class="social">
+                        <a href="#"><i class="fa-brands fa-twitter ss py-2 px-2"></i></a>
+                        <a class="mx-1" href="#"><i class="fa-brands fa-facebook-f ss py-2 px-2"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram ss py-2 px-2"></i></a>
+                        <a class="mx-1" href="#"><i class="fa-brands fa-linkedin ss py-2 px-2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-md-6">
+              <div class="card mb-3 ab"
+                style="max-width: 630px; border: none; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+                <div class="row g-0">
+                  <div class=" col-md-4">
+                    <img style="height: auto; width: 90%;"
+                      src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-3.jpg"
+                      class="img-fluid rounded-circle pt-3 px-3" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h4 style="color:#37517e; font-weight: bold; font-size: large;">William Anderson</h4>
+                      <span style="color: #565c60;">CTO</span>
+                      <p class="pt-3" style="color: #565c60;">Quisquam facilis cum velit laborum corrupti fuga rerum
+                        quia
+                      </p>
+                      <div class="social">
+                        <a href="#"><i class="fa-brands fa-twitter ss py-2 px-2"></i></a>
+                        <a class="mx-1" href="#"><i class="fa-brands fa-facebook-f ss py-2 px-2"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram ss py-2 px-2"></i></a>
+                        <a class="mx-1" href="#"><i class="fa-brands fa-linkedin ss py-2 px-2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-3 ab"
+                style="max-width: 630px; border: none; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img style="height: auto; width: 90%;"
+                      src="	https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-4.jpg"
+                      class="img-fluid rounded-circle pt-3 px-3" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h4 style="color:#37517e; font-weight: bold; font-size: large;">Amanda Jepson</h4>
+                      <span style="color: #565c60;">Accountant</span>
+                      <p class="pt-3" style="color: #565c60;">Dolorum tempora officiis odit laborum officiis et et
+                        accusamus
+                      </p>
+                      <div class="social">
+                        <a href="#"><i class="fa-brands fa-twitter ss py-2 px-2"></i></a>
+                        <a class="mx-1" href="#"><i class="fa-brands fa-facebook-f ss py-2 px-2"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram ss py-2 px-2"></i></a>
+                        <a class="mx-1" href="#"><i class="fa-brands fa-linkedin ss py-2 px-2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Eleventh Section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+  <div class="container-fluid py-5">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md text-center">
+          <h2 style="color:#37517e; font-weight: bold; font-size: 34px;">PRICING</h2>
+          <p class="py-4" style="color: #565c60;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+            suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+      </div>
+
+      <div class="row py-3">
+        <div class="col-md-4">
+          <div class=" container card mb-3"
+            style="height: 35.5rem; border-radius: 0%; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; border: none;">
+            <div class="card-body">
+              <div class="box py-3">
+                <h2 style="color:#37517e; font-size: 19px;">Free Plan</h2>
+                <h3 style="color:#37517e; font-size: 3.2rem;"><sup
+                    style="font-size: 1.8rem; padding-bottom: 10rem;">$</sup>0</h3>
+                <span style="color: #0dcaf0;">per month</span>
+                <ul class="pt-4">
+                  <li class="list-unstyled py-2" style="color:#afb1b4; position: relative; right: 2rem;"><i
+                      class="fa-solid fa-check px-2 pl"></i> Quam adipiscing vitae proin</li>
+                  <li class="list-unstyled py-2" style="color:#afb1b4; position: relative; right: 2rem;"><i
+                      class="fa-solid fa-check px-2 pl"></i> Nec feugiat nisl pretium</li>
+                  <li class="list-unstyled py-2" style="color:#afb1b4; position: relative; right: 2rem;"><i
+                      class="fa-solid fa-check px-2 pl"></i> Nulla at volutpat diam uteera</li>
+                  <li class="na list-unstyled py-2"
+                    style="color:#afb1b4; position: relative; right: 2rem; text-decoration:line-through;"><i
+                      class="fa-solid fa-xmark px-2"></i> <span>Pharetra massa massa ultricies</span></li>
+                  <li class="na list-unstyled py-2"
+                    style="color:#afb1b4; position: relative; right: 2rem; text-decoration:line-through;"><i
+                      class="fa-solid fa-xmark px-2"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                </ul>
+                <button class="rounded-pill mx-2 bot"
+                  style="border: 1px solid #0dcaf0; height: 3rem; width: 9rem; background-color: #fcfeff; color: #0dcaf0;"><a href="#"
+                    class="buy-btn text-decoration-none " style="color: #0dcaf0; font-size: 14px;" >Get
+                    Started</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class=" container card mb-3"
+            style="height: 35.5rem; border-radius: 0%; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; border: none;">
+            <div class="card-body">
+              <div class="box py-3">
+                <h2 style="color:#37517e; font-size: 19px;">Business Plan</h2>
+                <h3 style="color:#37517e; font-size: 3.2rem;"><sup
+                    style="font-size: 1.8rem; padding-bottom: 10rem;">$</sup>29</h3>
+                <span style="color: #0dcaf0;">per month</span>
+                <ul class="pt-4">
+                  <li class="list-unstyled py-2" style="color:#afb1b4; position: relative; right: 2rem;"><i
+                      class="fa-solid fa-check px-2 pl"></i> Quam adipiscing vitae proin</li>
+                  <li class="list-unstyled py-2" style="color:#afb1b4; position: relative; right: 2rem;"><i
+                      class="fa-solid fa-check px-2 pl"></i> Nec feugiat nisl pretium</li>
+                  <li class="list-unstyled py-2" style="color:#afb1b4; position: relative; right: 2rem;"><i
+                      class="fa-solid fa-check px-2 pl"></i> Nulla at volutpat diam uteera</li>
+                  <li class="na list-unstyled py-2" style="color:#afb1b4; position: relative; right: 2rem;"><i
+                      class="fa-solid fa-check px-2 pl"></i><span>Pharetra massa massa ultricies</span></li>
+                  <li class="na list-unstyled py-2" style="color:#afb1b4; position: relative; right: 2rem;"><i
+                      class="fa-solid fa-check px-2 pl"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                </ul>
+                <button class="rounded-pill mx-2"
+                  style="border: 1px solid #0dcaf0; height: 3rem; width: 9rem; background-color: #0f9fcb;"><a href="#"
+                    class="buy-btn  text-decoration-none" style="color: white; font-size: 14px;">Get Started</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class=" container card mb-3"
+            style="height: 35.5rem; border-radius: 0%; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; border: none;">
+            <div class="card-body">
+              <div class="box py-3">
+                <h2 style="color:#37517e; font-size: 19px;">Developer Plan</h2>
+                <h3 style="color:#37517e; font-size: 3.2rem;"><sup
+                    style="font-size: 1.8rem; padding-bottom: 10rem;">$</sup>49</h3>
+                <span style="color: #0dcaf0;">per month</span>
+                <ul class="pt-4">
+                  <li class="list-unstyled py-2" style="color:#afb1b4; position: relative; right: 2rem;"><i
+                      class="fa-solid fa-check px-2 pl"></i> Quam adipiscing vitae proin</li>
+                  <li class="list-unstyled py-2" style="color:#afb1b4; position: relative; right: 2rem;"><i
+                      class="fa-solid fa-check px-2 pl"></i> Nec feugiat nisl pretium</li>
+                  <li class="list-unstyled py-2" style="color:#afb1b4; position: relative; right: 2rem;"><i
+                      class="fa-solid fa-check px-2 pl"></i> Nulla at volutpat diam uteera</li>
+                  <li class="na list-unstyled py-2" style="color:#afb1b4; position: relative; right: 2rem;"><i
+                      class="fa-solid fa-check px-2 pl"></i> <span>Pharetra massa massa ultricies</span></li>
+                  <li class="na list-unstyled py-2" style="color:#afb1b4; position: relative; right: 2rem;"><i
+                      class="fa-solid fa-check px-2 pl"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                </ul>
+                <button class="btn btn-outline-info  rounded-pill mx-2"
+                  style="border: 1px solid #0dcaf0; height: 3rem; width: 9rem; background-color: #fcfeff; color:#0dcaf0 ;" type="submit"> Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>Twelve Section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+  <div class="container-fluid py-5" style="background-color: rgb(242, 246, 250);">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md">
+          <h2 style="color:#37517e; font-weight: bold; font-size: 32px;">FREQUENTLY ASKED QUESTIONS</h2>
+          <p class="py-4" style="color: #565c60;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+            suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item" style="border: none;">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <strong style="color:#0dcaf0; font-size: 20px; "><i
+                      class="fa-regular fa-circle-question"></i></strong> <span id="what" class="px-3">Non consectetur a
+                    erat nam at
+                    lectus urna duis?</span>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body mx-4" style="color: #565c60; font-weight: 600;">
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
+                  gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mt-4" style="border: none;">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <strong style="color:#0dcaf0; font-size: 20px; "><i
+                      class="fa-regular fa-circle-question"></i></strong> <span id="what" class="px-3">Feugiat
+                    scelerisque varius
+                    morbi enim nunc?</span>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body mx-4" style="color: #565c60; font-weight: 600;">
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
+                  donec ultrices. Fringilla phasellus faucibus scelerisque eleifend <br> donec pretium. Est pellentesque
+                  elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mt-4" style="border: none;">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <strong style="color:#0dcaf0; font-size: 20px; "><i
+                      class="fa-regular fa-circle-question"></i></strong> <span id="what" class="px-3">Dolor sit amet
+                    consectetur
+                    adipiscing elit?</span>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body mx-4" style="color: #565c60; font-weight: 600;">
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
+                  elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu
+                  tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed
+                  odio morbi quis
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mt-4" style="border: none;">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <strong style="color:#0dcaf0; font-size: 20px; "><i
+                      class="fa-regular fa-circle-question"></i></strong> <span id="what" class="px-3">Tempus quam
+                    pellentesque nec
+                    nam aliquam sem et tortor consequat?</span>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body mx-4" style="color: #565c60; font-weight: 600;">
+                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc
+                  vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus
+                  gravida quis blandit turpis cursus in.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mt-4" style="border: none;">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <strong style="color:#0dcaf0; font-size: 20px; "><i
+                      class="fa-regular fa-circle-question"></i></strong> <span id="what" class="px-3">Tortor vitae
+                    purus faucibus
+                    ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?</span>
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body mx-4" style="color: #565c60; font-weight: 600;">
+                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada
+                  nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis
+                  tellus in metus vulputate eu scelerisque.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>Contact Thirteen Section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+  <div class="container-fluid py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md text-center">
+          <h2 style="font-size: 34px; color: #37517e; font-weight: bolder;">CONTACT</h2>
+          <p class="py-4" style="color: #565c60;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+            suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 d-flex align-items-stretch">
+          <div class=" container card mb-3 py-1 h-100"
+            style="height: 36rem; border-radius: 0%; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; border: none;">
+            <div class="card-body px-4">
+              <div class="info">
+                <div class="address">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <h4 class="mx-5" style="position: relative;  color: #37517e;">Location:</h4>
+                  <p class="mx-5" style="position: relative;  color: #516c93; font-size: 14px;">A108 Adam
+                    Street, New York, NY 535022</p>
+                </div>
+
+                <div class="email pt-1">
+                  <i class="fa-regular fa-envelope"></i>
+                  <h4 class="mx-5" style="position: relative;  color: #37517e;">Email:</h4>
+                  <p class="mx-5" style="position: relative;  color: #516c93; font-size: 14px;">
+                    info@example.com</p>
+                </div>
+
+                <div class="phone py-2">
+                  <i class="fa-solid fa-mobile"></i>
+                  <h4 class="mx-5" style="position: relative;  color: #37517e;">Call:</h4>
+                  <p class="mx-5" style="position: relative;  color: #516c93; font-size: 14px;">+1 5589 55488
+                    55s</p>
+                </div>
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                  frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen=""></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+          <div class=" container card mb-3 h-100"
+            style="height: 36rem; border-radius: 0%; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; border: none;">
+            <div class="card-body">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="form-group col-md-6 mt-2">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" class="form-control mt-2" id="name" required="">
+                  </div>
+                  <div class="form-group col-md-6 mt-2">
+                    <label for="name">Your Email</label>
+                    <input type="email" class="form-control mt-2" name="email" id="email" required="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="mt-4" for="name">Subject</label>
+                  <input type="text" class="form-control mt-2" name="subject" id="subject" required="">
+                </div>
+                <div class="form-group">
+                  <label class="mt-4" for="name">Message</label>
+                  <textarea class="form-control mt-2" name="message" rows="10" required=""></textarea>
+                </div>
+            </div>
+            <div class="text-center mt-4"><button class="sub" type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Newsletter Footer Section>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+  <div class="container-fluid py-4" style="background-color: #f3f5fa;">
+    <div class="container">
+      <div class="row pt-4 text-center">
+        <div class="col-md">
+          <h4 style="color: #37517e; font-size: 23px;">Join Our Newsletter</h4>
+          <p class="py-3" style="color:#565c60; font-size: 17px;">Tamen quem nulla quae legam multos aute sint culpa
+            legam noster magna</p>
+        </div>
+
+      </div>
+      <div class="row py-4">
+        <div class="col-md-12 d-flex  justify-content-center">
+          <div class="d-flex bg-light rounded-5 justify-content-end"
+            style="width: 40vw; box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);">
+            <form class="justify-content-end w-75 d-flex" action="" method="post">
+              <input class="rounded-5 py-3 w-75  bg-light" style=" width:100px; border:none;  height: 20px;"
+                type="email" name="email">
+              <span><button class="btn rounded-5"
+                  style="background-color: #0f9fcb; width: 120px; height:40px; color: #ffffff;"
+                  type="submit">Subscribe</button></span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Footer-top Section>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+  <div class="container-fluid py-5">
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-md-3 col-10 ">
+          <h3 style="color: #37517e; font-weight: bold;">ARSHA</h3>
+          <p style="color: #565c60; font-size: 13.5px;">
+            A108 Adam Street <br>
+            New York, NY 535022<br>
+            United States <br><br>
+            <strong>Phone:</strong> +1 5589 55488 55<br>
+            <strong>Email:</strong> info@example.com<br>
+          </p>
+        </div>
+
+        <div class="col-md-3 col-10 footer-links ">
+          <h4 class="cla mx-4">Useful Links</h4>
+          <ul>
+            <li class="list-unstyled mt-3"><i class="fa-solid fa-chevron-right"></i> <a
+                class="text-decoration-none linc mx-1" href="#">Home</a></li>
+            <li class="list-unstyled mt-3"><i class="fa-solid fa-chevron-right"></i> <a
+                class="text-decoration-none linc mx-1" href="#">About us</a></li>
+            <li class="list-unstyled mt-3"><i class="fa-solid fa-chevron-right"></i> <a
+                class="text-decoration-none linc mx-1" href="#">Services</a></li>
+            <li class="list-unstyled mt-3"><i class="fa-solid fa-chevron-right"></i> <a
+                class="text-decoration-none linc mx-1" href="#">Terms of service</a></li>
+            <li class="list-unstyled mt-3"><i class="fa-solid fa-chevron-right"></i> <a
+                class="text-decoration-none linc mx-1" href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-10 footer-links">
+          <h4 class="cla mx-4">Our Services</h4>
+          <ul>
+            <li class="list-unstyled mt-3"><i class="fa-solid fa-chevron-right"></i> <a
+                class="text-decoration-none linc mx-1" href="#">Web Design</a></li>
+            <li class="list-unstyled mt-3"><i class="fa-solid fa-chevron-right"></i> <a
+                class="text-decoration-none linc mx-1" href="#">Web Development</a></li>
+            <li class="list-unstyled mt-3"><i class="fa-solid fa-chevron-right"></i> <a
+                class="text-decoration-none linc mx-1" href="#">Product Management</a></li>
+            <li class="list-unstyled mt-3"><i class="fa-solid fa-chevron-right"></i> <a
+                class="text-decoration-none linc mx-1" href="#">Marketing</a></li>
+            <li class="list-unstyled mt-3"><i class="fa-solid fa-chevron-right"></i> <a
+                class="text-decoration-none linc mx-1" href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-10 footer-links">
+          <h4 class="cla">Our Social Networks</h4>
+          <p class="py-3" style="color:#565c60; font-size: 15px;">Cras fermentum odio eu feugiat lide par naso tierra
+            videa magna derita valies</p>
+          <div class="social-links mt-3">
+            <a href="#"><i class="fa-brands fa-twitter st py-2 px-2"></i></a>
+            <a class="mx-1" href="#"><i class="fa-brands fa-facebook-f st py-2 px-2"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram st py-2 px-2"></i></a>
+            <a href="#"><i class="fa-brands fa-skype st py-2 px-2"></i></a>
+            <a class="mx-1" href="#"><i class="fa-brands fa-linkedin st py-2 px-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid py-2" style="background-color: #37517e;">
+    <div class="container">
+      <div class="row py-3">
+        <div class="col-lg-4 pt-2">
+          <div class="copyright" style="font-size: 14.5px; color: #e7f5fb;">
+            © Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <!-- >>>>>>>>Bootstrap website>>>>>>>>>> -->
+        </div>
+
+        <div class="col-md-3 pt-2">
+          <div class="credits ps-5 d-flex justify-content-end">
+            Designed by <a class="text-decoration-none" style="color: #0dcaf0;" href="https://bootstrapmade.com/">
+              BootstrapMade</a>
+          </div>
+        </div>
+
+        <div class="col-md-2 pt-1 px-5 d-flex justify-content-end">
+          <a href="#"
+            class="back-to-top position-fixed bottom-0 py-3 d-flex text-decoration-none d-flex justify-content-end active"><i
+              class="fa-solid fa-arrow-up st py-2 px-2"></i></a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var navbar = document.querySelector(".navbar");
+
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 0) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
